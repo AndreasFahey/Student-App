@@ -32,7 +32,7 @@ app.use(function(req, res, next) {
         res.send('Hello from Express');
      })
 
-     app.students('/api/students', function(req, res){
+     app.post('/api/students', function(req, res){
         console.log("student successful");
         console.log(req.body.name);
             console.log(req.body.college);
@@ -46,6 +46,7 @@ app.use(function(req, res, next) {
             year: req.body.year
         });
         res.send('Item added');
+    })
 
         app.get('/api/students', function(req, res){
             StudentModel.find(function(err, data){
@@ -96,4 +97,3 @@ app.use(function(req, res, next) {
            console.log("Example app listening at http://%s:%s", host, port)
     
         })
-    })

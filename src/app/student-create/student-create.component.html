@@ -1,0 +1,62 @@
+<mat-card>
+    <form (submit)="onAddStudent (studentForm)" #studentForm="ngForm">
+        <h3>Please Enter Your Full Name</h3>
+        <br>
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          name="name"
+          ngModel
+          required
+          minlength="3"
+          #name="ngModel">
+        <mat-error *ngIf="name.invalid">Please enter your Full Name</mat-error>
+      </mat-form-field>
+      <br>
+      <h3>Please Enter Your College of Study</h3>
+      <br>
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          name="college"
+          ngModel
+          required
+          minlength="3"
+          #college="ngModel">
+        <mat-error *ngIf="college.invalid">Please enter your College of Study. </mat-error>
+      </mat-form-field>
+      <h3>Please Enter The Course You Study</h3>
+      <br>
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          name="course"
+          ngModel
+          required
+          minlength="3"
+          #course="ngModel">
+        <mat-error *ngIf="course.invalid">Please enter the course you are Studying. </mat-error>
+      </mat-form-field>
+      <h3>Please Enter Your Year of Study</h3>
+      <br>
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          name="year"
+          ngModel
+          required
+          minlength="3"
+          #year="ngModel">
+        <mat-error *ngIf="year.invalid">Please enter your year of study.</mat-error>
+      </mat-form-field>
+      <br>
+      <button
+        mat-raised-button
+        color="accent"
+        type="submit">Save Student Details</button>
+    </form>
+  </mat-card>

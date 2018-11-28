@@ -1,3 +1,52 @@
-<p>
-  student-edit works!
-</p>
+<mat-card>
+  <form (submit)="onEditStudent(studentForm)" #studentForm="ngForm">
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="name"
+        ngModel={{student.name}}
+        required
+        #name="ngModel"
+        >
+        <mat-error *ngIf="name.invalid">Please enter your Full name.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="college"
+        ngModel={{student.college}}
+        required
+        #college="ngModel"
+        >
+        <mat-error *ngIf="college.invalid">Please enter your college of study.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="course"
+        ngModel={{student.course}}
+        required
+        #course="ngModel"
+        >
+        <mat-error *ngIf="course.invalid">Please enter your course of study.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="year"
+        ngModel={{student.year}}
+        required
+        #year="ngModel"
+        >
+        <mat-error *ngIf="year.invalid">Please enter your year of study.</mat-error>
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="accent"
+      type="submit">Update Student</button>
+  </form>
+</mat-card>

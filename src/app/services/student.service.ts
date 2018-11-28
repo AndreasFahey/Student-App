@@ -18,7 +18,7 @@ export class StudentService {
 
   addStudent(name: string, college: string, course: string, year: string): Observable<any> {
     const student: Student = {name: name, college: college, course: course, year: year};
-    return this.http.student("http://localhost:8081/api/students",student);
+    return this.http.post("http://localhost:8081/api/students",student);
   }
 
   deleteStudent(id: String): Observable<any> {
