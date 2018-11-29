@@ -1,3 +1,5 @@
+This is My Angular Mean App. I created a simple student database where the user can enter details. Name, College, Course and Year. For this project i used mLab as a database server for when the student info is entered it will read into the database. I have a delete and edit function for the student info. I implemented a simple colleges of ireland component as it was a minimum requirement to have at least four components. For css i installed the angular materials and imported pre sets. I used these as i like the clean look of it. A very simple app but im happy with the work i put in. I had this idea from the start and never thought of changing. 
+
 # AngularStud
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
