@@ -5,3 +5,11 @@ mat-form-field,
 textarea {
   width: 100%;
 }
+
+input{
+  color:palevioletred;
+}
+
+h5 {
+  color: gold;
+}

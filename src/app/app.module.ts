@@ -16,6 +16,7 @@ import { MatInputModule,
   MatExpansionModule} from '@angular/material';
 import { StudentCreateComponent } from './student-create/student-create.component';
 import { StudentEditComponent } from './student-edit/student-edit.component';
+import { CollegeComponent } from './college/college.component';
 
 const appRoutes: Routes = [
   {
@@ -29,6 +30,10 @@ const appRoutes: Routes = [
   {
     path: 'edit/:id',
     component: StudentEditComponent
+  },
+  {
+    path: 'colleges',
+    component: CollegeComponent
   }
 ];
 
@@ -38,7 +43,8 @@ const appRoutes: Routes = [
     AppComponent,
     StudentDetailsComponent,
     StudentCreateComponent,
-    StudentEditComponent
+    StudentEditComponent,
+    CollegeComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

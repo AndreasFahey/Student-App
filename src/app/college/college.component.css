@@ -1,0 +1,13 @@
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+h3 {
+    color: rgb(20, 4, 58);
+}
+
+h4 {
+    color: rgb(204, 13, 61);
+}
+
+a {
+    color: green;
+}
